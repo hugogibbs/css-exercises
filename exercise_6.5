@@ -1,0 +1,10 @@
+str = 'X-DSPAM-Confidence: 0.8475 '
+colpos = str.find(':')
+print(colpos)
+
+spos = str.find('5',colpos)
+print(spos)
+
+number = str[colpos+2:spos+1]
+flnum = float(number)
+print(flnum)
